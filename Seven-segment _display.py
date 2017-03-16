@@ -9,14 +9,14 @@ GPIO.cleanup()
 #set GPIO to BCM mode
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(5,GPIO.OUT)
-GPIO.setup(6,GPIO.OUT)
-GPIO.setup(13,GPIO.OUT)
-GPIO.setup(19,GPIO.OUT)
-GPIO.setup(12,GPIO.OUT)
-GPIO.setup(16,GPIO.OUT)
-GPIO.setup(20,GPIO.OUT)
-GPIO.setup(21,GPIO.OUT)
+GPIO.setup(5,GPIO.OUT)#e
+GPIO.setup(6,GPIO.OUT)#d
+GPIO.setup(13,GPIO.OUT)#c
+GPIO.setup(19,GPIO.OUT)#p
+GPIO.setup(12,GPIO.OUT)#g
+GPIO.setup(16,GPIO.OUT)#f
+GPIO.setup(20,GPIO.OUT)#a
+GPIO.setup(21,GPIO.OUT)#b
 #========================================================
 #set to pin mode(out or in)
 def ctrlLED(y):
