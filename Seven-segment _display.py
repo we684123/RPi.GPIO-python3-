@@ -111,28 +111,50 @@ def x16(char):
 	elif char == 16 :
 		r = ['P']
 		FORR(r)
+	elif char == 17 : #h
+		r = ['c','e','f','g']
+		FORR(r)
+	elif char == 18 : #p
+		r = ['a','b','e','f','g']
+		FORR(r)
+	elif char == 19 : #y
+		r = ['b','c','f','g']
+		FORR(r)
+	elif char == 20 : #i
+		r = ['e','f']
+		FORR(r)
+	elif char == 21 : #r
+		r = ['a','e','f']
+		FORR(r)
+	elif char == 22 : #t
+		r = ['d','e','f','g']
+		FORR(r)
 	else:
 		print('WTF hava a debug...')
 	return 0
 #======================================================== start
 while True:
-	char = input("pleas key a chat from \n(0~9 or a~f(10~15) or 'P'(20) or 'S'(21)):")
-	if (char >= 0 and char <= 9 ) :
-		x16(char)
-		print("0~9")
-	elif(char >= 10 and char <= 15 ) :
-		x16(char)
-		print("a~g")
-	elif (char == 20) :
-		x16(16)
-		print("P")
-	elif (char == 21) :
-		clsA()
-		print("S")
-	elif (char == 30) :
-		for i in range(17) :
-			x16(i)
-			time.sleep(0.2)
-	else:
-		print("whar are you Fxxx doing?")
+	hb = [17,10,18,18,19,11,20,21,22,17,14,10,19]
+	for x range(1,13):
+		#char = int(input("pleas key a chat from \n(0~9 or a~f(10~22) or 'P'(30) or 'S'(31)):"))
+		char = hb[x]
+		if (char >= 0 and char <= 9 ) :
+			x16(char)
+			print("0~9")
+		elif(char >= 10 and char <= 22 ) :
+			x16(char)
+			print("a~z")
+		elif (char == 30) :
+			x16(16)
+			print("P")
+		elif (char == 31) :
+			clsA()
+			print("S")
+		elif (char == 40) :
+			for i in range(17) :
+				x16(i)
+				time.sleep(0.2)
+		else:
+			print("whar are you Fxxx doing?")
+		time.sleep(0.4)
 #========================================================
