@@ -1,6 +1,3 @@
-#!/usr/bin/python
-#is eaey try to ctrl Seven-segment display,but GPIO-4 is out of order...
-
 import time
 import RPi.GPIO as GPIO
 
